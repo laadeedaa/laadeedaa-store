@@ -28,7 +28,7 @@ const Blog = () => {
     };
 
     getBlogItems();
-  }, []);
+  }, [airtableApi, blogItems]);
 
   const BlogItem = ({ title, date, text, image, id }) => (
     <div className="blog-item">
